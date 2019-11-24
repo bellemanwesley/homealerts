@@ -37,7 +37,7 @@ def apartment_puller():
 
 def send_message(the_body):
 	account_sid = 'AC75a39591d14401a882c79fbc8f7f5ebf'
-	auth_token = '949b9ea2596d9da4f17fbf85fe7d1b31'
+	auth_token = my_auth_toke #pull from secure storage
 	client = Client(account_sid, auth_token)
 
 	message = client.messages.create(
